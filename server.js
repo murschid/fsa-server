@@ -6,6 +6,7 @@ const app = express();
 app.use(morgan());
 const router = express.Router();
 
+//base route
 app.get('/', (req, res) => {
     fs.readFile('./views/index.html', (err, data) => {
         if(err) {
